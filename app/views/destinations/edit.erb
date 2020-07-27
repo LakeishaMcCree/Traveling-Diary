@@ -1,0 +1,16 @@
+<h1>Edit <%= @destination.title %></h1>
+
+<form action= "/destinations/<%= @destination.id %>" method="post">
+    <input type="hidden" name="_method" value="patch">
+
+    <input type="string" name="destination[title]" value=“<%= @destination.title %>” id="title"><br><br>
+    <input type="date" name="destination[date]" id="date"><br><br>
+    <input type="string" name="destination[season]" value=“<%= @destination.season %>” id="season"><br><br>
+    <input type="string" name="destination[location]" value=“<%= @destination.location %>” id="location"><br><br>
+    <input type="string" name="destination[attractions]" value=“<%= @destination.attractions %>” id="attractions"><br><br>
+    <input type="string" name="destination[restaurants]" value=“<%= @destination.restaurants %>” id="restaurants"><br><br>
+    <input type="string" name="destination[shopping]" value=“<%= @destination.shopping%>” id="shopping"><br><br>
+    <textarea type="text" name="destination[content]" id="content" cols="30" rows="10" value=“<%= @destination.content %>”></textarea><br><br>
+    <input type="submit" value="Update Destination">
+
+</form>

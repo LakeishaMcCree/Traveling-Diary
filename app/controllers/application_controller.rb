@@ -1,4 +1,6 @@
 require './config/environment'
+require 'rack-flash'
+require 'sinatra/base'
 
 class ApplicationController < Sinatra::Base
 
@@ -11,6 +13,16 @@ class ApplicationController < Sinatra::Base
 
   get "/" do
     erb :welcome
+  end
+
+  helpers do 
+    def logged_in?
+      !!session[:user_id]
+    end
+
+    def current_user
+      User.find_by_id(session[:user_id])
+    end
   end
 
 end
