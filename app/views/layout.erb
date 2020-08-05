@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">            
 
   </head>
-  <body class="light-blue">
+  <body class="teal accent-2">
     <!-- navigation -->
       <nav class="grey lighten-1">
         <div class="container">
@@ -34,15 +34,40 @@
     <!-- end navigation -->
 
     <!-- main content -->
-    <div class="container"> 
+    <div class="container teal accent-4 z-depth-3" style="margin-top: 25px; margin-bottom: 25px; padding: 25px; "> 
         <%= yield %>
     </div>
     <!-- end main content -->
 
-   
-      <footer class="branding">
-        <small>&copy; 2020 <strong>TravelingDiary</strong></small>
-      </footer>
+    <!--footer -->
+      
+      <footer class="page-footer grey lighten-1">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Connect With Us!</h5>
+                <p class="grey-text text-lighten-4">Add us to your social media pages to share your trips and destinations with us.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="https://twitter.com" target="_blank">Twitter</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://facebook.com" target="_blank">Facebook</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://instagram.com" target="_blank">Instagram</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2020 Traveling Diary
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+
+    <!--end footer -->
 
      <!-- javascripts -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>

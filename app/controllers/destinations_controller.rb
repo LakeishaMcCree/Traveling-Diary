@@ -15,7 +15,6 @@ class DestinationsController < ApplicationController
         if @destination.save
             redirect '/destinations'
         else
-            flash.now[:error] = @todo.errors.full_messages
             erb :'destinations/new'
         end
     end
@@ -31,6 +30,7 @@ class DestinationsController < ApplicationController
     end
 
     get '/destinations/:id' do
+        #binding.pry
         set_destination
         if @destination
             erb :'destinations/show'

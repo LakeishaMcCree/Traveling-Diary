@@ -5,6 +5,7 @@
 <p><%= @destination.attractions%></p>
 <p><%= @destination.restaurants%></p>
 <p><%= @destination.shopping%></p>
+<p><%= @destination.content%></p>
 
 <form action="/destinations/<%= @destination.id %>" method="post">
     <input type="hidden" name="_method" value="delete">
