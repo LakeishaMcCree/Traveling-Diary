@@ -2,15 +2,18 @@
 
 <form action="/signup" method="post">
     <br>
-    <div>
-        <label for="username">Username:</label>
+    <div class="input-field">
         <input type="text" name="user[username]" id="username">
+        <label for="username">Username:</label>
     </div> 
     <br>
-    <div>
-        <label for="password">Password:</label>
+    <div class="input-field">
         <input type="password" name="user[password]" id="password">
+        <label for="password">Password:</label>
     </div> 
     <br>
-    <input type="submit" value="Create Account">
+    <button type="submit" class="btn waves-effect waves-light">
+    <i class="material-icons right">send</i>
+    Create Account
+    </button>
 </form>

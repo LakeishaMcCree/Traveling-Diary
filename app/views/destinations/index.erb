@@ -1,10 +1,12 @@
 <h1>Destinations<h1>
 <hr>
 
-<p><a href="/destinations/new"> Add New Destination</a></p>
 
 <% @destinations.each do |destination| %>
-        <p><a href="/destinations/<%= destination.id %>"><%= destination.title%>
-        </a></h3>
+      <p><a href="/destinations/<%= destination.id %>"><%= destination.title%>
+        </a></h3>    
 <% end %>
+ <p><a href="/destinations/new"><i class="material-icons" style="margin-top: 4px">add</i>Add New Destination</a></p>
+
+ 
 
