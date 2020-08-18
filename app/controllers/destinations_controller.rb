@@ -22,7 +22,7 @@ class DestinationsController < ApplicationController
 ###Dynamic Route###
     get '/destinations/:id/edit' do
         set_destination
-        if current_user.id == @destination.user_id
+        if current_user.id && current_user == @destination.user_id
             erb :'destinations/edit'
         else
             redirect '/destinations'
